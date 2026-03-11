@@ -24,7 +24,7 @@ If you're new to cloud native geospatial data formats and want to learn more abo
 ### Zarr
 We recommend using this data format if the data is regularly gridded.
 
-<TODO: turn to a table>
+<!-- TODO: turn to a table -->
 - Coordinates: Time, Y, X
 - Dimensions: Time, Embedding, Y, X
   - Time - int (year) or datetime object (timestamp, time delta)
