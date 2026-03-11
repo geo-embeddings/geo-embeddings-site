@@ -16,7 +16,6 @@ The best way to get involved is through GitHub:
 
 ## Contributing
 
-- **Review the [roadmap](/roadmap)** to understand current priorities and open work items
 - **Keep changes focused** — avoid modifying multiple sections at once; use issues for discussion before large updates
 - **Branch in the main repo** for visible collaborative work
 - **PRs are reviewed async on GitHub** and merged by SWG chairs when rough consensus is reached
