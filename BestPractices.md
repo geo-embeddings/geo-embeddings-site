@@ -34,7 +34,7 @@ We recommend using this data format if the data is regularly gridded.
   - [Embedding](https://github.com/geo-embeddings/embeddings-stac-specification)
 
 For multi-temporal embeddings:
-<TODO: turn to a table>
+<!--TODO: turn to a table -->
 - Coordinates: timedelta, Y, X (date range)
 - Dimensions: timedelta, Embedding, Y, X
 - Compression: BLOSC with ZSTD
