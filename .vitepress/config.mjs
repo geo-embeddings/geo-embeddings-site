@@ -29,6 +29,7 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Best Practices", link: "/bestpractices" },
       { text: "Implementations", link: "/implementations" },
+      { text: "Tutorials", link: "/tutorials/" },
       { text: "Get Involved", link: "/get-involved" },
       { text: "FAQ", link: "/faq" },
       {
