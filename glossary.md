@@ -94,8 +94,9 @@ A technique used to find data points that are mathematically "close" to a given 
 - Dot product
 - Euclidean distance
 
-<!-- similarity_search.svg -->
-
+<img src="./images/similarity.png" 
+     alt="Similarity Search" 
+     style="display: block; width: 50%; max-width: 350px; height: auto;" />
 ---
 
 ### Multimodal
