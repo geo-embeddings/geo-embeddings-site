@@ -10,7 +10,7 @@ To host data via Source Cooperative, fill out this [form](https://docs.google.co
 :::
 
 ::: tip
-If the cost of blob storage from large providers like AWS or GCS is cost-prohibitive for you or your org, check out this guide + cost comparison for other blob storage options.
+If the cost of blob storage from large providers like AWS or GCS is cost-prohibitive for you or your org, check out [this guide + cost comparison](https://bdon.github.io/cng-storage-guide/) for other blob storage options.
 :::
 
 
