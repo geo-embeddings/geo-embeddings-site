@@ -3,7 +3,7 @@ description: Best practices for storing and sharing geo-embeddings using cloud n
 ---
 # Best Practices
 ## Storage 
-We recommend using blob storage for sharing geo-embeddings with the community. Access over HTTP with range-reads supported is the key feature. Public buckets are great if you can pay for the egress; or setting up a requester-pays bucket allows public access at no network egress cost to you. This can be Source Coop, AWS S3, Google Cloud GCS, Azure Blob store, Huggingface, or similar.
+We recommend using blob storage for sharing geo-embeddings with the community. Access over HTTP with range-reads supported is the key feature. Public buckets are great if you can pay for the egress; or setting up a requester-pays bucket allows public access at no network egress cost to you. This can be Source Coop, AWS S3, Google Cloud GCS, Azure Blob store, Huggingface, or similar. Here is  a [CNG Geospatial Storage Cheatsheet](https://bdon.github.io/cng-storage-guide/)
 
 ::: info
 To host data via Source Cooperative, fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLScvt8OYE-gf7xkdtMYhjcgoUWZcJQILHKiBkLtihQ-bHWiBZA/viewform?usp=sharing&ouid=118199663156641128589).
@@ -25,7 +25,7 @@ If you're new to cloud native geospatial data formats and want to learn more abo
 We recommend using this data format if the data is regularly gridded.
 
 <!-- TODO: turn to a table -->
-- Coordinates: Time, Y, X
+- Coordinates: Time, Embedding, Y, X
 - Dimensions: Time, Embedding, Y, X
   - Time - int (year) or datetime object (timestamp, time delta)
 - Attributes
@@ -35,7 +35,7 @@ We recommend using this data format if the data is regularly gridded.
 
 For multi-temporal embeddings:
 <!--TODO: turn to a table -->
-- Coordinates: timedelta, Y, X (date range)
+- Coordinates: timedelta, Embedding, Y, X (date range)
 - Dimensions: timedelta, Embedding, Y, X
 - Compression: BLOSC with ZSTD
 - Use Zarr's sharding codec.
