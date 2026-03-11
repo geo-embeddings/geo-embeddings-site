@@ -118,8 +118,5 @@ model-index:
       url: {source_url}             # Required if source is provided. A link to the source. Example: https://arxiv.org/html/2412.04204v1
 ---
 
-This markdown file contains the spec for the SSL/Geospatial foundation model modelcard metadata. Note that some characteristics of embeddings, which may also be of interest, are not included. Properties will be validated by the Hub when git pushing changes to your README.md file.
-Valid license identifiers can be found in [our docs](https://huggingface.co/docs/hub/repositories-licenses).
-
-For a template for the human-readable portion of the model card, see: [modelcard_template.md file](https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md).
+This markdown file contains the spec for the SSL/Geospatial foundation model modelcard metadata. Note that some characteristics of embeddings, which may also be of interest, are not included.  
 ```
