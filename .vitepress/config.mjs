@@ -32,6 +32,7 @@ export default defineConfig({
       { text: "Implementations", link: "/implementations" },
       { text: "Get Involved", link: "/get-involved" },
       { text: "Model Card", link: "/model-card" },
+      { text: "Data Card", link: "/data-card" },
       {
         text: "Glossary",
         items: [
