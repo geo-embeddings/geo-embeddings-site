@@ -18,9 +18,8 @@ The best way to get involved is through GitHub:
 
 - **Keep changes focused** — avoid modifying multiple sections at once; use issues for discussion before large updates
 - **Branch in the main repo** for visible collaborative work
-- **PRs are reviewed async on GitHub** and merged by SWG chairs when rough consensus is reached
+- **PRs are reviewed async on GitHub** and merged when rough consensus is reached
 
-Full guide: [CONTRIBUTING.md](https://github.com/zarr-developers/geozarr-spec/blob/main/CONTRIBUTING.md)
 
 ## Community Channels
 

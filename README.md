@@ -1,18 +1,30 @@
 # Geo-Embeddings Website
 
-A landing page for orientation to the [GeoZarr](https://github.com/zarr-developers/geozarr-spec) project — modular Zarr conventions for storing and accessing multidimensional georeferenced grids.
+A landing page for orientation to the Geo-Embeddings Best Practices.
 
 Built with [VitePress](https://vitepress.dev/).
 
 ## Pages
 
-| Page            | File                 | Description                                                            |
-| --------------- | -------------------- | ---------------------------------------------------------------------- |
-| Home            | `index.md`           | Landing page with project overview and feature highlights              |
-| Conventions     | `conventions.md`     | Core conventions (geo-proj, spatial, multiscales) with maturity levels |
-| Roadmap         | `roadmap.md`         | V1 release milestones targeting OGC standardization                    |
-| Implementations | `implementations.md` | Matrix of libraries and tools with feature support                     |
-| Get Involved    | `get-involved.md`    | Community links, meeting schedule, and contribution guide              |
+| Page            | File                 | Notes                                       |
+| --------------- | -------------------- | ------------------------------------------- |
+| Home            | `index.md`           | Hero and project overview                   |
+| Best Practices  | `bestpractices.md`   | Best-practice guidance and maturity model   |
+| Implementations | `implementations.md` | Libraries and tools                         |
+| Get Involved    | `get-involved.md`    | Contribution and community info             |
+| FAQ             | `faq.md`             | Frequently asked questions                  |
+| Resources       | `resources.md`       | Resource page (not currently linked in nav) |
+
+## Navigation (current)
+
+Top nav currently includes:
+
+- Home
+- Best Practices
+- Implementations
+- Get Involved
+- FAQ
+- Resources (dropdown currently has no links)
 
 ## Development
 
@@ -36,18 +48,18 @@ geo-embeddings-site/
 │       └── style.css        # Custom color scheme and styles
 ├── public/
 │   └── favicon.svg
-├── index.md                 # Home (hero layout)
-├── conventions.md
-├── roadmap.md
+├── index.md
+├── bestpractices.md
 ├── implementations.md
-└── get-involved.md
+├── get-involved.md
+├── faq.md
+├── resources.md
+└── roadmap.data.js
 ```
 
 ## Editing Content
 
 All content lives in Markdown files at the project root. VitePress renders them using [its Markdown extensions](https://vitepress.dev/guide/markdown) — standard Markdown plus frontmatter, custom containers, and Vue components.
-
-Each page on the live site also has an "Edit this page on GitHub" link in the footer.
 
 
 ## Attribute 
