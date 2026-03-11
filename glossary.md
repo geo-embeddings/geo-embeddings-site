@@ -20,7 +20,7 @@ A numerical vector produced by a trained model that encodes the meaningful prope
 
 - **Multimodal Multitemporal Location + Imagery** — *(TBD)*
 
-<img src="./images/embedding.png" 
+<img src="./images/embeddings.png" 
      alt="Embeddings" 
      style="display: block; width: 100%; max-width: 350px; height: auto;" />
 
@@ -54,7 +54,7 @@ A summary token whose output vector represents the entire image as a single embe
 ---
 
 ### Embedding Quantization
-The process of reducing the numerical precision of embedding vectors by representing their values with lower-precision numbers or discrete codes, reducing memory and speeding up similarity search.
+Quantization reduces the precision of each number in the embedding vector. Less memory, faster search — with a small accuracy tradeoff.
 
 <img src="./images/quantization.png" 
      alt="Quantization" 
