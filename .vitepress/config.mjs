@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
+  base: "/geo-embeddings-site/",
   title: "Geo-Embeddings",
   description:
     "Modular Zarr conventions for storing and accessing multidimensional georeferenced grids",
