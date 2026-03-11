@@ -20,6 +20,10 @@ A numerical vector produced by a trained model that encodes the meaningful prope
 
 - **Multimodal Multitemporal Location + Imagery** — *(TBD)*
 
+<img src="./images/embedding.png" 
+     alt="Embeddings" 
+     style="display: block; width: 100%; max-width: 350px; height: auto;" />
+
 ---
 
 ### Patch
@@ -51,6 +55,10 @@ A summary token whose output vector represents the entire image as a single embe
 
 ### Embedding Quantization
 The process of reducing the numerical precision of embedding vectors by representing their values with lower-precision numbers or discrete codes, reducing memory and speeding up similarity search.
+
+<img src="./images/quantization.png" 
+     alt="Quantization" 
+     style="display: block; width: 50%; max-width: 350px; height: auto;" />
 
 ---
 
@@ -130,7 +138,7 @@ A format for storing geospatial data in Parquet tables with geometry and spatial
 ---
 
 ### Zarr
-A format for storing large multidimensional arrays in chunked form. Designed for high-performance, parallel computing and cloud-native storage (e.g., S3, Google Cloud Storage) by breaking arrays into small, independently readable binary chunks. Typically, embeddings are published in Zarr format.
+A format for storing large multidimensional arrays in chunked form. Designed for high-performance, parallel computing and cloud-native storage (e.g., S3, Google Cloud Storage) by breaking arrays into small, independently readable binary chunks. This is the preferred format for publishing embeddings.
 
 ---
 
