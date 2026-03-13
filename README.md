@@ -9,11 +9,11 @@ Built with [VitePress](https://vitepress.dev/).
 | Page            | File                 | Notes                                       |
 | --------------- | -------------------- | ------------------------------------------- |
 | Home            | `index.md`           | Hero and project overview                   |
-| Best Practices  | `bestpractices.md`   | Best-practice guidance |
-| Conventions | `conventions.md` | GeoEmbeddings maturity model |
+| Best Practices  | `bestpractices.md`   | Best-practice guidance                      |
+| Conventions     | `conventions.md`     | GeoEmbeddings maturity model                |
 | Implementations | `implementations.md` | Libraries and tools                         |
 | Get Involved    | `get-involved.md`    | Contribution and community info             |
-| FAQ             | `faq.md`             | Frequently asked questions                  |
+| Glossary        | `glossary.md`        | Glossary of terms with anchor links         |
 | Resources       | `resources.md`       | Resource page (not currently linked in nav) |
 
 ## Navigation (current)
@@ -22,10 +22,10 @@ Top nav currently includes:
 
 - Home
 - Best Practices
+- Core Conventions
 - Implementations
 - Get Involved
-- FAQ
-- Resources (dropdown currently has no links)
+- Glossary (dropdown with links to individual terms)
 
 ## Development
 
@@ -51,11 +51,10 @@ geo-embeddings-site/
 │   └── favicon.svg
 ├── index.md
 ├── bestpractices.md
+├── conventions.md
 ├── implementations.md
 ├── get-involved.md
-├── faq.md
-├── resources.md
-└── roadmap.data.js
+├── glossary.md
 ```
 
 ## Editing Content
