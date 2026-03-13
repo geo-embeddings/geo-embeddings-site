@@ -107,7 +107,7 @@ A technique used to find data points that are mathematically "close" to a given 
 
 ## Zarr
 
-A format for storing large multidimensional arrays in chunked form. Designed for high-performance, parallel computing and cloud-native storage (e.g., S3, Google Cloud Storage) by breaking arrays into small, independently readable binary chunks. This is the preferred format for publishing embeddings.
+A format for storing large multidimensional arrays in chunked form. Designed for high-performance, parallel computing and cloud-native storage (e.g., S3, Google Cloud Storage) by breaking arrays into small, independently readable binary chunks. This is the preferred format for publishing regularly gridded embeddings.
 
 ## Zero-shot
 
