@@ -34,7 +34,9 @@ export default defineConfig({
       { text: "FAQ", link: "/faq" },
       {
         text: "Resources",
-        items: [],
+        items: [
+          { text: "Glossary", link: "/glossary" },
+        ],
       },
     ],
 
