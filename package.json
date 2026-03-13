@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "build:tutorials": "python3 scripts/build_tutorials.py",
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"

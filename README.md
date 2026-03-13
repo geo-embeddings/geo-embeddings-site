@@ -12,6 +12,7 @@ Built with [VitePress](https://vitepress.dev/).
 | Best Practices  | `bestpractices.md`   | Best-practice guidance |
 | Conventions | `conventions.md` | GeoEmbeddings maturity model |
 | Implementations | `implementations.md` | Libraries and tools                         |
+| Tutorials       | `tutorials/*.ipynb`  | Executed notebooks rendered into site pages |
 | Get Involved    | `get-involved.md`    | Contribution and community info             |
 | FAQ             | `faq.md`             | Frequently asked questions                  |
 | Resources       | `resources.md`       | Resource page (not currently linked in nav) |
@@ -23,6 +24,7 @@ Top nav currently includes:
 - Home
 - Best Practices
 - Implementations
+- Tutorials
 - Get Involved
 - FAQ
 - Resources (dropdown currently has no links)
@@ -33,6 +35,7 @@ Requires [Node.js](https://nodejs.org/) (v18+).
 
 ```bash
 npm install
+npm run build:tutorials  # Render executed notebooks in tutorials/ into Markdown pages
 npm run dev       # Start dev server with hot reload at localhost:5173
 npm run build     # Build static site for production
 npm run preview   # Preview the production build locally

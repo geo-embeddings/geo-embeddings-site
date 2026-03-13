@@ -30,6 +30,7 @@ export default defineConfig({
       { text: "Best Practices", link: "/bestpractices" },
       { text: "Core Conventions", link: "/conventions" },
       { text: "Implementations", link: "/implementations" },
+      { text: "Tutorials", link: "/tutorials/" },
       { text: "Get Involved", link: "/get-involved" },
       { text: "FAQ", link: "/faq" },
       {

@@ -18,3 +18,51 @@
   --vp-c-brand-3: #2a7e3b;
   --vp-c-brand-soft: rgba(61, 186, 94, 0.16);
 }
+
+.vp-doc .main img {
+  height: auto;
+  max-width: 100%;
+}
+
+.vp-doc .main pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.vp-doc pre,
+.vp-doc pre > code,
+.vp-doc .main > pre,
+.vp-doc .main > pre > code,
+.vp-doc .main pre code,
+.vp-doc div[class*="language-"] code {
+  display: block;
+  max-width: 100%;
+  white-space: pre-wrap !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.vp-doc pre {
+  overflow-x: hidden;
+}
+
+.vp-doc .main code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.vp-doc .main table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.vp-doc .main :is(div, p, span, li) {
+  overflow-wrap: anywhere;
+}
+
+.vp-doc .main .xr-wrap,
+.vp-doc .main .xr-text-repr-fallback {
+  max-width: 100% !important;
+}
