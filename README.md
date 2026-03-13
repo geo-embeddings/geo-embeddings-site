@@ -9,7 +9,8 @@ Built with [VitePress](https://vitepress.dev/).
 | Page            | File                 | Notes                                       |
 | --------------- | -------------------- | ------------------------------------------- |
 | Home            | `index.md`           | Hero and project overview                   |
-| Best Practices  | `bestpractices.md`   | Best-practice guidance and maturity model   |
+| Best Practices  | `bestpractices.md`   | Best-practice guidance |
+| Conventions | `conventions.md` | GeoEmbeddings maturity model |
 | Implementations | `implementations.md` | Libraries and tools                         |
 | Get Involved    | `get-involved.md`    | Contribution and community info             |
 | FAQ             | `faq.md`             | Frequently asked questions                  |

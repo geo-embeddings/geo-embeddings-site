@@ -13,5 +13,7 @@ hero:
     - theme: alt
       text: View Best Practices
       link: /bestpractices
-
+    - theme: alt
+      text: Core Conventions
+      link: /conventions
 ---

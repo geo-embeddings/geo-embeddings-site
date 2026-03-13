@@ -1,17 +1,18 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
+  base: "/",
   title: "Geo-Embeddings",
   description:
     "Modular Zarr conventions for storing and accessing multidimensional georeferenced grids",
   sitemap: {
-    hostname: "https://geozarr.org",
+    hostname: "https://geoembeddings.org",
   },
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
-    ["link", { rel: "canonical", href: "https://geozarr.org" }],
+    ["link", { rel: "https://geoembeddings.org" }],
     ["meta", { property: "og:title", content: "Geo-Embeddings" }],
-    ["meta", { property: "og:url", content: "https://geozarr.org" }],
+    ["meta", { property: "og:url", content: "https://geoembeddings.org" }],
     [
       "meta",
       {
@@ -27,6 +28,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Best Practices", link: "/bestpractices" },
+      { text: "Core Conventions", link: "/conventions" },
       { text: "Implementations", link: "/implementations" },
       { text: "Get Involved", link: "/get-involved" },
       { text: "FAQ", link: "/faq" },

@@ -34,7 +34,7 @@ function textColor(bgHex) {
 
 <template>
   <div v-if="milestones.length === 0" class="empty">
-    <p>Could not load issues from GitHub. View the <a href="https://github.com/orgs/zarr-developers/projects/12">project board</a> directly.</p>
+    <p>Could not load issues from GitHub. View the <a href="https://github.com/geo-embeddings/geo-embeddings-site/projects">project board</a> directly.</p>
   </div>
 
   <div v-for="ms in milestones" :key="ms.number" class="milestone">
