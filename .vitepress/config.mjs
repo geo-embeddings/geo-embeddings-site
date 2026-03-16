@@ -65,7 +65,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/zarr-developers/geozarr-site",
+        link: "https://github.com/geo-embeddings",
       },
     ],
 
@@ -76,12 +76,12 @@ export default defineConfig({
     footer: {
       message:
         'Released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.',
-      copyright: "Copyright © 2026 GeoZarr Developers",
+      copyright: "Copyright © 2026",
     },
 
     editLink: {
       pattern:
-        "https://github.com/zarr-developers/geozarr-site/edit/main/site/:path",
+        "https://github.com/geo-embeddings/geo-embeddings-site/edit/main/:path",
       text: "Edit this page on GitHub",
     },
   },
