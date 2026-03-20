@@ -26,14 +26,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
-      - name: Install Python dependencies
-        run: python3 -m pip install nbconvert nbformat
+      - name: Sync docs Python dependencies
+        run: uv sync --group docs
 
       - name: Install Node dependencies
         run: npm ci

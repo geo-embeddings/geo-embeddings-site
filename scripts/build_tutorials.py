@@ -17,6 +17,16 @@ def title_from_stem(stem: str) -> str:
     return stem.replace("_", " ").replace("-", " ").title()
 
 
+def title_from_notebook(notebook: nbformat.NotebookNode, stem: str) -> str:
+    for cell in notebook.cells:
+        if cell.cell_type != "markdown":
+            continue
+        source = cell.source.strip()
+        if source.startswith("# "):
+            return source.splitlines()[0][2:].strip()
+    return title_from_stem(stem)
+
+
 def clean_generated_files() -> None:
     for path in TUTORIALS_DIR.glob("*.md"):
         if path.name != "index.md":
@@ -26,6 +36,7 @@ def clean_generated_files() -> None:
             shutil.rmtree(path)
     if GENERATED_CSS_PATH.exists():
         GENERATED_CSS_PATH.unlink()
+    GENERATED_CSS_PATH.write_text("/* Generated notebook output styles. */\n", encoding="utf-8")
 
 
 def extract_style_blocks(markdown: str) -> tuple[str, list[str]]:
@@ -65,7 +76,7 @@ def render_notebook(notebook_path: Path) -> tuple[str, str]:
     append_generated_css(style_blocks)
 
     stem = notebook_path.stem
-    title = title_from_stem(stem)
+    title = title_from_notebook(notebook, stem)
     output_name = f"{stem}.md"
     output_path = TUTORIALS_DIR / output_name
     asset_dir = TUTORIALS_DIR / f"{stem}_files"
@@ -99,8 +110,6 @@ def build_index(entries: list[tuple[str, str]]) -> None:
         "---",
         "",
         "# Tutorials",
-        "",
-        "Rendered from executed notebooks in `tutorials/`.",
         "",
     ]
     for title, output_name in entries:
