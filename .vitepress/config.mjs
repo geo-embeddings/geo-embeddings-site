@@ -28,7 +28,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Best Practices", link: "/bestpractices" },
-      { text: "Core Conventions", link: "/conventions" },
+      { text: "Standards", link: "/conventions" },
       { text: "Implementations", link: "/implementations" },
       { text: "Get Involved", link: "/get-involved" },
       {
