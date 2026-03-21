@@ -25,6 +25,8 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    outline: [2, 3],
+
     nav: [
       { text: "Home", link: "/" },
       { text: "Best Practices", link: "/bestpractices" },

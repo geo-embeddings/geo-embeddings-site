@@ -18,3 +18,16 @@
   --vp-c-brand-3: #2a7e3b;
   --vp-c-brand-soft: rgba(61, 186, 94, 0.16);
 }
+
+/* Make h3 headings more distinct */
+.vp-doc h3 {
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Style the description text following headers */
+.vp-doc h3 + p strong {
+  color: var(--vp-c-text-2);
+  font-weight: 500;
+}

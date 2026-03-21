@@ -77,6 +77,25 @@ Check out the [Cloud Native Geospatial Formats Guide](https://guide.cloudnativeg
 | Compression | ZSTD |
 | Row group size | ~128MB |
 | Page size | Use case dependent; embedding size recommended for vector search |
+| Metadata | Embed STAC asset metadata in file header (see below) |
+
+#### Embedding STAC Metadata in GeoParquet
+
+Embed STAC asset metadata directly in the GeoParquet file header using an `emb` key, similar to how GeoParquet uses the `geo` key. This approach **only** works when each file contains embeddings from a single STAC item. Alternatively, include a link to the STAC item in each row.
+
+[Example file with embedded STAC metadata](https://ei-ssl4eo-embeddings.s3.us-west-2.amazonaws.com/test/18SUJ_2025-01-01_2026-01-01.parquet)
+
+::: warning Reader Support
+Some readers like GeoPandas don't expose custom metadata tags. Use PyArrow directly to read the `emb` metadata from file headers:
+
+```python
+import json
+import pyarrow.parquet as pq
+
+parquet_file = pq.ParquetFile("embeddings.parquet")
+emb_metadata = json.loads(parquet_file.schema_arrow.metadata[b"emb"])
+```
+:::
 
 ## Tooling
 
