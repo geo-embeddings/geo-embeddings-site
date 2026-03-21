@@ -4,88 +4,135 @@ description: Data card format for geo-embeddings.
 
 # Dataset Card
 
-This dataset card represents a collection of information we recommend to be included with geospatial embedding datasets for dataset discovery and ability to query.
+This is a template for Hugging Face dataset cards tailored for geospatial embedding datasets. Copy the markdown below and paste it into your dataset's README.md on Hugging Face Hub. Replace the placeholders in `{braces}` with your own information.
 
-```markdown
+## Template
+
+```yaml
 ---
-# Suggested metadata to be added to a geospatial embedding dataset card.  
-
+# === Basic Information (Required) ===
 language:
-- {lang_0}  # Example: fr
-- {lang_1}  # Example: en
+- {lang_0}
+- {lang_1}
 
-license: {license}  # Example: apache-2.0 or any license from https://hf.co/docs/hub/repositories-licenses
+license: {license}
+license_name: {license_name}
+license_link: {license_link}
+license_details: {license_details}
 
-license_name: {license_name}  # If license = other (license not in https://hf.co/docs/hub/repositories-licenses), specify an id for it here, like `my-license-1.0`.
-
-license_link: {license_link}  # If license = other, specify "LICENSE" or "LICENSE.md" to link to a file of that name inside the repo, or a URL to a remote file.
-
-license_details: {license_details}  # Legacy, textual description of a custom license.
-
-creator: {provider_names} # Name(s) of organization or individual that developed/licensed the model
-
-funder: {funder_names} # Optional. Name(s) of funding institutions where relevant
+creator: {creator}
+funder: {funder}
 
 tags:
-- {tag_0}  # Example: audio
-- {tag_1}  # Example: bio
-- {tag_2}  # Example: natural-language-understanding
-- {tag_3}  # Example: birds-classification
+- {tag_0}
+- {tag_1}
+- {tag_2}
 
-embedding_spatial_types: # acceptable values pixel, patch, scene
-- {embedding_type_1}
-- {embedding_type_2}
+# === Embedding Properties (Required) ===
+embedding_spatial_types:
+- {embedding_spatial_type_0}
+- {embedding_spatial_type_1}
 
-embedding_temporal_type: # acceptable values single-date and multi-date
-- {embedding_temporal_context_1}
-- {embedding_temporal_context_2}
+embedding_temporal_type:
+- {embedding_temporal_type_0}
+- {embedding_temporal_type_1}
 
-embedding_spatial_context: {embedding_spatial_context} # acceptable values spatial context determined by embedding spatial type, spatial context beyond embedding spatial type 
+embedding_spatial_context: {embedding_spatial_context}
+embedding_temporal_context: {embedding_temporal_context}
+embedding_dimension: {embedding_dimension}
 
-embedding_temporal_context: {embedding_temporal_context} # acceptable values temporal context determined by embedding spatial type, spatial context beyond embedding temporal type
+grid_spacing:
+- {x_meters, y_meters}
+- {x_meters, y_meters}
 
-embedding_dimension: {embedding_dimension} # int
-
-grid_spacing: # size in meters of the output footprint of embedding, can accept multiple sizes
-- {x_meters, y_meteres} 
-- {x_meters, y_meteres} 
-
+# === Source Information (Required) ===
 inference_datasets:
-- {source_dataset_0}  # Example: sentinel-2-l2a
-- {source_dataset_1}  # Example: sentinel-1-rtc
+- {source_dataset_0}
+- {source_dataset_1}
 
-model_name: {model_name} # name of the pretrained
-model_link: {model_link} # URL to the model card
+model_name: {model_name}
+model_link: {model_link}
 
-postprocessing: {postprocessing_description} # Explain any processing applied to embeddings (such as smoothing) after generation
+# === Processing Details (Optional) ===
+postprocessing: {postprocessing}
+quantization: {quantization}
 
-quantization: {quantization_description} # Explain any quantization applied to the embedding values, null otherwise
+# === Standard HF Fields (Optional) ===
+paperswithcode_id: {paperswithcode_id}
 
-paperswithcode_id: {paperswithcode_id}  # Dataset id on PapersWithCode (from the URL). Example for SQuAD: squad
-
-# Optional. This part can be used to store information about features that are added to the embedding dataset such as an uncertianty rating or a label.
+# === Dataset Info (Optional) ===
 dataset_info:
   features:
-    - name: {feature_name_0}    # Example: id
-      dtype: {feature_dtype_0}  # Example: int32
-    - name: {feature_name_1}    # Example: text
-      dtype: {feature_dtype_1}  # Example: string
-    - name: {feature_name_2}    # Example: image
-      dtype: {feature_dtype_2}  # Example: image
-  download_size: {dataset_download_size}   # Example for SQuAD: 35142551
-  dataset_size: {dataset_size}             # Example for SQuAD: 89789763
+    - name: {feature_name_0}
+      dtype: {feature_dtype_0}
+    - name: {feature_name_1}
+      dtype: {feature_dtype_1}
+  download_size: {download_size}
+  dataset_size: {dataset_size}
 
-# Optional. If you want your dataset to be protected behind a gate that users have to accept to access the dataset. More info at https://huggingface.co/docs/hub/datasets-gated
+# === Access Control (Optional) ===
 extra_gated_fields:
-- {field_name_0}: {field_type_0}  # Example: Name: text
-- {field_name_1}: {field_type_1}  # Example: Affiliation: text
-- {field_name_2}: {field_type_2}  # Example: Email: text
-- {field_name_3}: {field_type_3}  # Example for speech datasets: I agree to not attempt to determine the identity of speakers in this dataset: checkbox
+- {field_name_0}: {field_type_0}
+- {field_name_1}: {field_type_1}
 
-extra_gated_prompt: {extra_gated_prompt}  # Example for speech datasets: By clicking on “Access repository” below, you also agree to not attempt to determine the identity of speakers in the dataset.
-<!-- --- -->
-
-Valid license identifiers can be found in [our docs](https://huggingface.co/docs/hub/repositories-licenses).
-
-For a template for the human-readable portion of the dataset card, see: [datasetcard_template.md file](https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/datasetcard_template.md).
+extra_gated_prompt: {extra_gated_prompt}
+---
 ```
+
+## Field Reference
+
+### Basic Information
+
+| Field | Required | Description | Example |
+|-------|----------|-------------|---------|
+| `language` | No | Language codes | `fr`, `en` |
+| `license` | Yes | License identifier from [HF licenses](https://hf.co/docs/hub/repositories-licenses) | `apache-2.0` |
+| `license_name` | No | Custom license ID (if `license` = `other`) | `my-license-1.0` |
+| `license_link` | No | Path or URL to license file (if `license` = `other`) | `LICENSE.md` |
+| `license_details` | No | Legacy textual description of a custom license | |
+| `creator` | Yes | Organization or individual that created the dataset | `NASA` |
+| `funder` | No | Funding institutions | `NSF`, `ESA` |
+| `tags` | No | Searchable tags | `geospatial`, `embeddings`, `sentinel-2` |
+
+### Embedding Properties
+
+| Field | Required | Description | Acceptable Values |
+|-------|----------|-------------|-------------------|
+| `embedding_spatial_types` | Yes | Spatial type of embeddings | `pixel`, `patch`, `scene` |
+| `embedding_temporal_type` | Yes | Temporal type of embeddings | `single-date`, `multi-date` |
+| `embedding_spatial_context` | Yes | Spatial context scope | `spatial context determined by embedding spatial type`, `spatial context beyond embedding spatial type` |
+| `embedding_temporal_context` | Yes | Temporal context scope | `temporal context determined by embedding spatial type`, `spatial context beyond embedding temporal type` |
+| `embedding_dimension` | Yes | Embedding vector size (integer) | `768` |
+| `grid_spacing` | Yes | Size in meters of the output footprint (x, y) | `10, 10` |
+
+### Source Information
+
+| Field | Required | Description | Example |
+|-------|----------|-------------|---------|
+| `inference_datasets` | Yes | Source data products used to generate embeddings | `sentinel-2-l2a`, `sentinel-1-rtc` |
+| `model_name` | Yes | Name of the model used to generate embeddings | `Clay-v1` |
+| `model_link` | Yes | URL to the model card | `https://huggingface.co/...` |
+
+### Processing Details (Optional)
+
+| Field | Description | Example |
+|-------|-------------|---------|
+| `postprocessing` | Any processing applied to embeddings after generation (e.g., smoothing) | |
+| `quantization` | Any quantization applied to embedding values, or `null` | `int8` |
+
+### Dataset Info (Optional)
+
+| Field | Description | Example |
+|-------|-------------|---------|
+| `features` | List of features with `name` and `dtype` | `name: id, dtype: int32` |
+| `download_size` | Download size in bytes | `35142551` |
+| `dataset_size` | Dataset size in bytes | `89789763` |
+
+### Access Control (Optional)
+
+Use these fields if you want your dataset protected behind a gate. See [HF gated datasets](https://huggingface.co/docs/hub/datasets-gated) for more info.
+
+| Field | Description | Example |
+|-------|-------------|---------|
+| `extra_gated_fields` | Fields users must fill out to access | `Name: text`, `Email: text`, `Affiliation: text` |
+| `extra_gated_prompt` | Message shown to users requesting access | |
