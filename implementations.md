@@ -24,5 +24,5 @@ Pre-computed embedding datasets following the [best practices](/bestpractices) d
 
 | Dataset | Model | Format | Data Card | Storage | License |
 |---------|-------|--------|-----------|---------|---------|
-| Earth Index Embeddings | | GeoParquet | N/A | [S3 (Source Coop)](https://source.coop/earthgenome/earthindexembeddings) | |
-| LGND Sentinel-2 L2A | Clay v1.5 | GeoParquet | N/A | [S3 (Source Coop)](https://source.coop/clay/lgnd-clay-v1-5-sentinel-2-l2a) | |
+| Earth Index Embeddings | SoftCon | GeoParquet | N/A | [S3 (Source Coop)](https://source.coop/earthgenome/earthindexembeddings) | CC-BY-4.0 |
+| LGND Sentinel-2 L2A | Clay v1.5 | GeoParquet | N/A | [S3 (Source Coop)](https://source.coop/clay/lgnd-clay-v1-5-sentinel-2-l2a) | CC-BY-4.0 |
