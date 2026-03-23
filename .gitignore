@@ -1,3 +1,6 @@
 node_modules/
 .vitepress/dist/
 .vitepress/cache/
+tutorials/*.md
+tutorials/*_files/
+tutorials/*.ipynb_checkpoints

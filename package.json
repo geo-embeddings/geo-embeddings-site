@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "build:tutorials": "uv run --group docs python scripts/build_tutorials.py",
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
