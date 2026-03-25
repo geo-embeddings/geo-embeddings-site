@@ -30,8 +30,9 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Best Practices", link: "/bestpractices" },
-      { text: "Core Conventions", link: "/conventions" },
+      { text: "Standards", link: "/standards" },
       { text: "Implementations", link: "/implementations" },
+      { text: "Tutorials", link: "/tutorials/" },
       { text: "Get Involved", link: "/get-involved" },
       {
         text: "HF Cards",
