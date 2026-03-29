@@ -26,4 +26,4 @@ Pre-computed embedding datasets following the [best practices](/bestpractices) d
 |---------|-------|--------|-----------|---------|---------|
 | Earth Index Embeddings | SoftCon | GeoParquet | N/A | [S3 (Source Coop)](https://source.coop/earthgenome/earthindexembeddings) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) |
 | LGND Sentinel-2 L2A | Clay v1.5 | GeoParquet | N/A | [S3 (Source Coop)](https://source.coop/clay/lgnd-clay-v1-5-sentinel-2-l2a) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) |
-| AEF GeoZarr Mosaic | AEF | GeoZarr | N/A | [S3 (Source Coop)](https://source.coop/tge-labs/aef-mosaic) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) |
+| AEF Mosaic | AEF | GeoZarr | N/A | [S3 (Source Coop)](https://source.coop/tge-labs/aef-mosaic) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) |
