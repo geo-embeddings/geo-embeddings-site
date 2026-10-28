@@ -8,5 +8,5 @@ description: GeoEmbeddings standards for STAC extensions and Zarr conventions.
 These standards are in early development and may change significantly.
 :::
 
-- [Embeddings STAC Extension](https://github.com/geo-embeddings/embeddings-stac-specification)
+- [Embeddings STAC Extension](https://github.com/stac-extensions/embeddings)
 - [Embeddings Zarr Convention](https://github.com/geo-embeddings/embeddings-zarr-convention)
