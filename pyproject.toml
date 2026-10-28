@@ -14,11 +14,34 @@ docs = [
   "nbformat>=5.10",
 ]
 notebooks = [
+  "duckdb>=2.0",
+  "faiss-cpu>=1.11",
+  "geopandas>=1.1",
+  "huggingface-hub>=1.0",
   "ipykernel>=6.29",
   "jupyterlab>=4.3",
+  "lonboard>=0.12",
   "matplotlib>=3.10",
   "obstore>=0.9.2",
+  "pyarrow>=21.0",
+  "pyproj>=3.7",
+  "rasterio>=1.4",
+  "rioxarray>=0.19",
   "s3fs>=2025.3.0",
+  "scikit-learn>=1.7",
+  "scipy>=1.15",
+  "torch>=2.8",
+  "umap-learn>=0.5.9",
   "xarray>=2025.1.0",
   "zarr>=3.1",
 ]
+
+# CPU-only PyTorch on Linux keeps `uv sync` from pulling multi-GB CUDA wheels;
+# macOS and Windows wheels on PyPI are already CPU builds.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
