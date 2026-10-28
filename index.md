@@ -12,7 +12,7 @@ hero:
       link: /get-involved
     - theme: alt
       text: View Best Practices
-      link: /bestpractices
+      link: /bestpractices/
     - theme: alt
       text: Standards
       link: /standards
