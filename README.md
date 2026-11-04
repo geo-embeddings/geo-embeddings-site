@@ -9,8 +9,9 @@ Built with [VitePress](https://vitepress.dev/).
 | Page            | File                 | Notes                                       |
 | --------------- | -------------------- | ------------------------------------------- |
 | Home            | `index.md`           | Hero and project overview                   |
-| Best Practices  | `bestpractices.md`   | Best-practice guidance                      |
-| Conventions     | `conventions.md`     | GeoEmbeddings maturity model                |
+| Best Practices  | `bestpractices/*.md` | Overview page plus one page per topic (storage, formats, tooling, provenance, building trust) |
+| Standards       | `standards.md`       | GeoEmbeddings maturity model                |
+| HF Cards        | `model-card.md`, `data-card.md` | Hugging Face card templates      |
 | Implementations | `implementations.md` | Libraries and tools                         |
 | Tutorials       | `tutorials/*.ipynb`  | Executed notebooks rendered into site pages |
 | Get Involved    | `get-involved.md`    | Contribution and community info             |
@@ -22,11 +23,12 @@ Built with [VitePress](https://vitepress.dev/).
 Top nav currently includes:
 
 - Home
-- Best Practices
-- Core Conventions
+- Best Practices (dropdown with one entry per page in `bestpractices/`)
+- Standards
 - Implementations
 - Tutorials
 - Get Involved
+- HF Cards (dropdown: Model Card, Data Card)
 - Glossary (dropdown with links to individual terms)
 
 ## Development
@@ -67,8 +69,10 @@ geo-embeddings-site/
 ├── public/
 │   └── favicon.svg
 ├── index.md
-├── bestpractices.md
-├── conventions.md
+├── bestpractices/          # Overview (index.md) plus one page per topic
+├── standards.md
+├── model-card.md
+├── data-card.md
 ├── implementations.md
 ├── get-involved.md
 ├── glossary.md
@@ -76,7 +80,7 @@ geo-embeddings-site/
 
 ## Editing Content
 
-All content lives in Markdown files at the project root. VitePress renders them using [its Markdown extensions](https://vitepress.dev/guide/markdown) — standard Markdown plus frontmatter, custom containers, and Vue components.
+All content lives in Markdown files at the project root. New best practices topics go in `bestpractices/` and need an entry in the nav dropdown in `.vitepress/config.mjs` and a link in `bestpractices/index.md`. VitePress renders them using [its Markdown extensions](https://vitepress.dev/guide/markdown) — standard Markdown plus frontmatter, custom containers, and Vue components.
 
 
 ## Attribute 

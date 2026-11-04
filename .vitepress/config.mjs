@@ -29,7 +29,17 @@ export default defineConfig({
 
     nav: [
       { text: "Home", link: "/" },
-      { text: "Best Practices", link: "/bestpractices" },
+      {
+        text: "Best Practices",
+        items: [
+          { text: "Overview", link: "/bestpractices/" },
+          { text: "Storage", link: "/bestpractices/storage" },
+          { text: "Cloud Native Geospatial Formats", link: "/bestpractices/cloud-native-formats" },
+          { text: "Tooling", link: "/bestpractices/tooling" },
+          { text: "Data Provenance", link: "/bestpractices/data-provenance" },
+          { text: "Building Trust", link: "/bestpractices/building-trust" },
+        ],
+      },
       { text: "Standards", link: "/standards" },
       { text: "Implementations", link: "/implementations" },
       { text: "Tutorials", link: "/tutorials/" },

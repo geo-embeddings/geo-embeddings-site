@@ -20,7 +20,7 @@ Models with Hugging Face Model Cards following the [HF Model Card template](/mod
 
 ## Embedding Datasets
 
-Pre-computed embedding datasets following the [best practices](/bestpractices) described on this site.
+Pre-computed embedding datasets following the [best practices](/bestpractices/) described on this site.
 
 | Dataset | Model | Format | Data Card | Storage | License |
 |---------|-------|--------|-----------|---------|---------|
